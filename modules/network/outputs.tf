@@ -1,2 +1,0 @@
-# VPC ID
-output 
