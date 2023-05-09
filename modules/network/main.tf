@@ -134,11 +134,11 @@ resource "aws_vpc_endpoint" "endpoints" {
   vpc_id            = aws_vpc.this.id
   service_name      = each.value["service_name"]
   vpc_endpoint_type = each.value["vpc_endpoint_type"]
-  subnet_ids = [for key, value in aws_subnet.private : value.id]
+  subnet_ids        = [for key, value in aws_subnet.private : value.id]
   security_group_ids = [
     aws_security_group.full_open.id,
   ]
-  
+
   tags = {
     Name = each.key
   }
