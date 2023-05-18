@@ -3,7 +3,7 @@
 ## Summary
 Created an EKS cluster using Terraform and created reusable modules based on Terraform resources (everything is from scratch)
 
-Followed Terraform Best Practices following https://www.terraform-best-practices.com/
+Followed Terraform Best Practices: https://www.terraform-best-practices.com/
 
 ## Features
 - Fully private EKS cluster
